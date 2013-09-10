@@ -5,7 +5,7 @@ group :development do
   gem "jeweler", "~> 1.6.4"
   # gem "rcov", ">= 0"
   gem "reek", "~> 1.2.8"
-  gem "rest-client"
+  gem "rest-client", :git => "git://github.com/sur/rest-client.git"
   gem "activesupport"
   gem "activemodel"
   gem "vcr"
@@ -13,7 +13,7 @@ group :development do
   gem "turn" # Better output for Test::Unit
 end
 
-gem "rest-client"
+gem "rest-client", :git => "git://github.com/sur/rest-client.git"
 gem "activesupport"
 gem "activemodel"
 gem "json"

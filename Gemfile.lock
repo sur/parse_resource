@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/sur/rest-client.git
-  revision: d7a11503af419a5336465ff73465a738f7cd5d8d
+  revision: 7b985a5cec6ffa6733cad1723243ba629b1a9ed1
+  branch: master
   specs:
     rest-client (1.7.0.alpha)
       mime-types (>= 1.16)

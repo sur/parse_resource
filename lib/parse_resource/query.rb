@@ -101,7 +101,8 @@ class Query
 
     return chunk_results(params) if criteria[:chunk]
 
-    resp = @klass.resource.get(:params => params)
+    # resp = @klass.resource.get(:params => params)
+    resp = get_resource(@klass, params)
     
     if criteria[:count] == 1
       results = JSON.parse(resp)['count']
@@ -124,7 +125,7 @@ class Query
       params[:skip] = slice.first
       params[:limit] = slice.length # Either the chunk size or the end of the limited results
 
-      resp = @klass.resource.get(:params => params)
+      resp = get_resource(@klass, params)
       results = JSON.parse(resp)['results']
       result = result + results.map {|r| @klass.model_name.to_s.constantize.new(r, false)}
       break if results.length < params[:limit] # Got back fewer than we asked for, so exit.
@@ -177,6 +178,18 @@ class Query
     else
       super
     end
+  end
+
+  # this method retries the fetch from parse if parse returns empty string
+  def get_resource(klass, params)    
+    tries = 0
+    while tries < 3
+      resp = klass.resource.get(:params => params)
+      tries += 1
+      break if !resp.to_s.strip.blank?
+      sleep(0.5)
+    end
+    resp
   end
 
 end

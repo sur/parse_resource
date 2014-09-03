@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/sur/rest-client.git
-  revision: ae2042e704e77874c9c92fac0a225565f52536bd
-  branch: surmax/tweaked_for_parse
+  revision: 62bcdf39404071f5c2f4a364aa867e35a9d5ccce
+  tag: v1.6.8.1
   specs:
     rest-client (1.7.0.alpha)
       mime-types (>= 1.16)

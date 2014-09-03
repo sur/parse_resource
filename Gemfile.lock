@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/sur/rest-client.git
-  revision: 1117c5e83d05923701169945183c6a2b7223d7b2
-  branch: sur
+  revision: ae2042e704e77874c9c92fac0a225565f52536bd
+  branch: surmax/tweaked_for_parse
   specs:
     rest-client (1.7.0.alpha)
       mime-types (>= 1.16)
@@ -28,11 +28,11 @@ GEM
       git (>= 1.2.5)
       rake
     json (1.7.7)
-    mime-types (1.25)
+    mime-types (2.3)
     multi_json (1.7.2)
     netrc (0.7.7)
     rake (10.0.4)
-    rdoc (4.0.1)
+    rdoc (4.1.1)
       json (~> 1.4)
     reek (1.2.13)
       ripper_ruby_parser (~> 0.0.7)

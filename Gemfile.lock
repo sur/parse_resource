@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/sur/rest-client.git
-  revision: 62bcdf39404071f5c2f4a364aa867e35a9d5ccce
-  tag: v1.6.8.1
+  revision: 7c79bf0c2a357c9f8da4c8bcd71c5a7054014263
+  tag: v1.6.9
   specs:
     rest-client (1.7.0.alpha)
       mime-types (>= 1.16)
@@ -28,11 +28,11 @@ GEM
       git (>= 1.2.5)
       rake
     json (1.7.7)
-    mime-types (2.3)
+    mime-types (2.4.1)
     multi_json (1.7.2)
     netrc (0.7.7)
     rake (10.0.4)
-    rdoc (4.1.1)
+    rdoc (4.1.2)
       json (~> 1.4)
     reek (1.2.13)
       ripper_ruby_parser (~> 0.0.7)

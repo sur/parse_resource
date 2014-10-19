@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/sur/rest-client.git
-  revision: 33b90987a08e3bee055e1f68e05307326d932338
-  tag: v1.7.0
+  revision: 3acd1bb7f1b2d322a5f56875ceb456fae777bee4
+  tag: v1.7.1
   specs:
     rest-client (1.7.0.alpha)
       mime-types (>= 1.16)
